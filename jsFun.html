@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/CSS" href="css/jsFun.css"/>
+		<title>
+			JS is fun
+		</title>
+	</head>
+	<body>
+		<div class="button" id="b1" onclick="changeColors()"> 
+			<p> This is a button! </p>
+		</div>
+	<script>
+		function coolAlert()
+		{
+			window.alert("Cool!");
+		}
+		function changeColors()
+		{
+			var x = document.getElementById("b1");
+			if (x.style.background == ("blue"))
+			{
+				reset();
+			}
+			else
+			{
+				x.style.background = "blue";
+			}
+		}
+		function reset()
+		{
+			var x = document.getElementById("b1");
+			x.style = "background-color: #E8345F;";
+		}
+	</script>
+	</body>
+</html>
